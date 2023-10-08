@@ -33,7 +33,7 @@ done <<< "$paragraphs"
 
 
 # Generate the HTML file
-cat <<EOL > "./posts/html/$output_file.html"
+cat <<EOL > "./posts/archive/$output_file.html"
 <!DOCTYPE html>
 <html lang="en">
 <head>
