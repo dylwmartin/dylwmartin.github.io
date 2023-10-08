@@ -30,12 +30,11 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 20px; /* Add some space between links */
-    color: #A09070;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #A09070;
 }
 
 nav a:hover {
