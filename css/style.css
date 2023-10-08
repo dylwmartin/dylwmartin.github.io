@@ -30,6 +30,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 20px; /* Add some space between links */
+    color: #A09070;
 }
 
 nav a {
@@ -44,5 +45,5 @@ nav a:hover {
 
 h2 {
     font-size: 1.5em;
-    color: #A09070; /* Slightly orange gray */
+    color: blue;
 }
