@@ -17,13 +17,12 @@ h1 {
     font-size: 1em;
     color: #CCCCCC;
 }
-
-/* h1 a {
+h1 a {
     text-decoration: none;
     color: #CCCCCC; 
-} */
+}
 
-h1 a/*:hover */{
+h1 a:hover {
     color: blue; /* Change color on hover */
     text-decoration: underline;
 }
