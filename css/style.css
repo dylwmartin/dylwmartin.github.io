@@ -41,3 +41,8 @@ nav a:hover {
     color: blue; /* Change color on hover */
     text-decoration: underline;
 }
+
+h2 {
+    font-size: 1.5em;
+    color: #A09070; /* Slightly orange gray */
+}
