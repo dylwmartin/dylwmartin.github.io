@@ -9,7 +9,7 @@ body {
 
 @media (max-width: 3000px) {
     .body {
-        margin: 10px; /* When the screen width is 600px or less, the margin will be set to 0 */
+        max-width: 95%; /* When the screen width is 600px or less, the margin will be set to 0 */
     }
 }
 
