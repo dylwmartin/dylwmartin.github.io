@@ -15,15 +15,15 @@ body {
 
 h1 {
     font-size: 1em;
-    color: #CCCCCC;
 }
+
 h1 a {
     text-decoration: none;
-    color: #AAB8C2; 
+    color: #8498A6; 
 }
 
 h1 a:hover {
-    /*color: blue; *//* Change color on hover */
+    color: blue; /* Change color on hover */
     text-decoration: underline;
 }
 
@@ -54,11 +54,11 @@ section a:hover {
 
 nav a {
     text-decoration: none;
-    color: #AAB8C2;
+    color: #8498A6;
 }
 
 nav a:hover {
-    /*color: blue;*/ /* Change color on hover */
+    color: blue; /* Change color on hover */
     text-decoration: underline;
 }
 
