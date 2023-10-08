@@ -7,6 +7,12 @@ body {
     padding: 20px; /* Add padding for readability */
 }
 
+@media (max-width: 600px) {
+    .body {
+        margin: 10px; /* When the screen width is 600px or less, the margin will be set to 0 */
+    }
+}
+
 h1 {
     font-size: 1em;
     color: #9F7E69; /* Slightly orange gray */
