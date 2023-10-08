@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: white;
     margin: 0 auto; /* Center the body content */
-    margin-top: 20px;
+    margin-top: 15px;
     max-width: 50%; /* Set maximum width to 66% of the viewport */
     padding: 20px; /* Add padding for readability */
 }
