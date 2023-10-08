@@ -64,5 +64,8 @@ EOL
 # Generate the HTML link
 link="<li><a href="./posts/html/$output_file.html">$date - $title</a></li>"
 
-# Add the link to the existing HTML file
-sed -i '21,25s/<ul>/<ul>'"$link"'/' archive.html
+# Find the position of the second <ul>
+second_ul_position=$(awk '/<ul>/{c++} c==2{print NR; exit}' archive.html)
+
+# Insert the variable before the second <ul>
+awk -v line=$second_ul_position -v value="$link" 'NR==line-1 {$0=value ORS $0} 1' archive.html
