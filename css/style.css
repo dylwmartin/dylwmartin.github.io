@@ -10,12 +10,12 @@ h1 {
     color: #789456; /* Slightly green gray */
 }
 
-nav h1 {
+h1 a {
     text-decoration: none;
     transition: color 0.3s; /* Add transition for smooth color change on hover */
 }
 
-nav h1:hover {
+h1 a:hover {
     color: blue; /* Change color on hover */
     text-decoration: underline;
 }
