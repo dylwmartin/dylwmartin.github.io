@@ -1,8 +1,13 @@
 body {
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     background-color: black;
     color: white;
-    margin-top: 15px;
+   /* margin-top: 15px;*/
+    margin: 0 auto; /* Center the body content */
+    max-width: 66%; /* Set maximum width to 66% of the viewport */
+   /* font-size: 16px; /* Adjust font size as needed */*/
+   /* line-height: 1.6; /* Adjust line height as needed */*/
+    padding: 20px; /* Add padding for readability */
 }
 
 h1 {
