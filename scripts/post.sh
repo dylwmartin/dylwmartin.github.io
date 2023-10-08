@@ -15,17 +15,17 @@ date=$(sed -n '2p' "$input_file")
 paragraphs=$(sed -e '1,2d' "$input_file")
 
 #touch ./posts/html/$title.html
-output_file="$title"
+output_file=$(echo "$title" | tr -d ' ')
 
-#
+
 # Create HTML content
-#html_content="<h2>$title</h2>
-#              <p>Date: $date</p>"
-#
+html_content="<h2>$title</h2>
+              <p>Date: $date</p>"
+
 # Loop through paragraphs and add to HTML content
-#while IFS= read -r paragraph; do
-#    html_content+="\n<p>$paragraph</p>"
-#done <<< "$paragraphs"
+while IFS= read -r paragraph; do
+    html_content+="<p>$paragraph</p>"
+done <<< "$paragraphs"
 #
 # Generate the HTML file
 cat <<EOL > "./posts/html/$output_file.html"
@@ -48,9 +48,10 @@ cat <<EOL > "./posts/html/$output_file.html"
 			<li><a href="archive.html">archive</a></li>
 		</ul>
 	</nav>
-#<body>
-#    $html_content
-#</body>
+
+    $html_content
+
+</body>
 </html>
 EOL
 
