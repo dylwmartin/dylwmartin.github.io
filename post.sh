@@ -7,17 +7,16 @@ if [ "$#" -ne 1 ]; then
 fi
 
 input_file="$1"
-output_file="$2"
+#output_file="$2"
 
 # Read the input file and assign values to variables
 title=$(sed -n '1p' "$input_file")
 date=$(sed -n '2p' "$input_file")
 paragraphs=$(sed -e '1,2d' "$input_file")
 
-touch ./posts/html/$title.html
+#touch ./posts/html/$title.html
+output_file="$title"
 
-
-#output_file="$title
 #
 # Create HTML content
 #html_content="<h2>$title</h2>
@@ -29,16 +28,30 @@ touch ./posts/html/$title.html
 #done <<< "$paragraphs"
 #
 # Generate the HTML file
-#cat <<EOL > "$output_file"
-#<!DOCTYPE html>
-#<html>
-#<head>
-#    <title>$title</title>
-#</head>
+cat <<EOL > "./posts/html/$output_file.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Emily Dickinson Simulator</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">emily dickinson simulator</a></h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="about.html">about</a></li>
+			<li><a href="archive.html">archive</a></li>
+		</ul>
+	</nav>
 #<body>
 #    $html_content
 #</body>
-#</html>
-#EOL
+</html>
+EOL
 
 #echo "HTML file generated successfully!"
