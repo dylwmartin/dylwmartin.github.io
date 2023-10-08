@@ -27,7 +27,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-/*    margin: 0 10px; /* Add some space between links */*/
+    margin-right: 10px; /* Add some space between links */
 }
 
 nav a {
