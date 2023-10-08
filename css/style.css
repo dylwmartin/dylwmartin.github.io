@@ -15,12 +15,12 @@ body {
 
 h1 {
     font-size: 1em;
-    color: #9F7E69; /* Slightly orange gray */
+    color: #CCCCCC;
 }
 
 h1 a {
     text-decoration: none;
-    color: #A09070; /* Slightly orange gray */
+    color: #CCCCCC; 
 }
 
 h1 a:hover {
@@ -38,9 +38,19 @@ nav li {
     margin-right: 20px; /* Add some space between links */
 }
 
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 section a {
     text-decoration: none;
     color: #A09070;
+}
+
+section a:hover {
+    color: blue; /* Change color on hover */
+    text-decoration: underline;
 }
 
 nav a {
