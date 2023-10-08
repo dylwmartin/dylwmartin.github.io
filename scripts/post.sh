@@ -61,6 +61,9 @@ cat <<EOL > "./posts/archive/$output_file.html"
 EOL
 
 
+
+###UPDATE ARCHIVE
+
 # Generate the HTML link
 link="<li><a href="./posts/html/$output_file.html">$date - $title</a></li>"
 
@@ -72,3 +75,8 @@ ul_position=$(awk '/<ul>/{c++} c==2{print NR; exit}' "$file")
 
 # Insert the link after the second <ul> element
 awk -v line=$ul_position -v value="$link" 'NR==line+1 {$0=value ORS $0} 1' "$file" > tmpfile && mv tmpfile "$file"
+
+
+### UPDATE INDEX
+rm index.html
+cp "./posts/archive/$output_file.html" index.html
