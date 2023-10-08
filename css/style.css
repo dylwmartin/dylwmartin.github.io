@@ -7,9 +7,9 @@ body {
     padding: 20px; /* Add padding for readability */
 }
 
-@media (max-width: 3000px) {
-    .body {
-        max-width: 95%; /* When the screen width is 600px or less, the margin will be set to 0 */
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 95%
     }
 }
 
