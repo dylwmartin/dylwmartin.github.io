@@ -19,8 +19,7 @@ output_file=$(echo "$title" | tr -d ' ')
 
 
 # Create HTML content
-html_content="<h2>$title</h2>
-              <p>Date: $date</p>"
+html_content="<h2>$title - $date</h2>"
 
 # Loop through paragraphs and add to HTML content (empty paragraphs are added as <br>)
 while IFS= read -r paragraph; do
