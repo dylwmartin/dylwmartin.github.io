@@ -32,6 +32,11 @@ nav li {
     margin-right: 20px; /* Add some space between links */
 }
 
+section a {
+    text-decoration: none;
+    color: #A09070;
+}
+
 nav a {
     text-decoration: none;
     color: #A09070;
