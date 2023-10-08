@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 input_file="$1"
-#output_file="$2"
+
 
 # Read the input file and assign values to variables
 title=$(sed -n '1p' "$input_file")
@@ -22,11 +22,16 @@ output_file=$(echo "$title" | tr -d ' ')
 html_content="<h2>$title</h2>
               <p>Date: $date</p>"
 
-# Loop through paragraphs and add to HTML content
+# Loop through paragraphs and add to HTML content (empty paragraphs are added as <br>)
 while IFS= read -r paragraph; do
-    html_content+="<p>$paragraph</p>"
+    if [[ -z "${paragraph}" || "${paragraph}" =~ ^[[:space:]]*$ ]]; then
+        html_content+="<br>"
+    else
+        html_content+="<p>${paragraph}</p>"
+    fi
 done <<< "$paragraphs"
-#
+
+
 # Generate the HTML file
 cat <<EOL > "./posts/html/$output_file.html"
 <!DOCTYPE html>
@@ -54,5 +59,3 @@ cat <<EOL > "./posts/html/$output_file.html"
 </body>
 </html>
 EOL
-
-#echo "HTML file generated successfully!"
