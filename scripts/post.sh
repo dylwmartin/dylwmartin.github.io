@@ -64,7 +64,7 @@ EOL
 ###UPDATE ARCHIVE
 
 # Generate the HTML link
-link="<li><a href="./posts/html/$output_file.html">$date - $title</a></li>"
+link="<li><a href="./posts/archive/$output_file.html">$date - $title</a></li>"
 
 # Define the file
 file="archive.html"
