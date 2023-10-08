@@ -7,7 +7,7 @@ body {
     padding: 20px; /* Add padding for readability */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 3000px) {
     .body {
         margin: 10px; /* When the screen width is 600px or less, the margin will be set to 0 */
     }
