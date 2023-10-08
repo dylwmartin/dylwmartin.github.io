@@ -19,11 +19,11 @@ h1 {
 }
 h1 a {
     text-decoration: none;
-    color: #CCCCCC; 
+    color: #AAB8C2; 
 }
 
 h1 a:hover {
-    color: blue; /* Change color on hover */
+    /*color: blue; *//* Change color on hover */
     text-decoration: underline;
 }
 
@@ -52,13 +52,13 @@ section a:hover {
     text-decoration: underline;
 }
 
-/*nav a {
+nav a {
     text-decoration: none;
-    color: #CCCCCC;
-}*/
+    color: #AAB8C2;
+}
 
-nav a/*:hover*/ {
-    color: blue; /* Change color on hover */
+nav a:hover {
+    /*color: blue;*/ /* Change color on hover */
     text-decoration: underline;
 }
 
