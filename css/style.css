@@ -3,7 +3,7 @@ body {
     color: white;
     margin: 0 auto; /* Center the body content */
     margin-top: 20px;
-    max-width: 55%; /* Set maximum width to 66% of the viewport */
+    max-width: 50%; /* Set maximum width to 66% of the viewport */
     padding: 20px; /* Add padding for readability */
 }
 
