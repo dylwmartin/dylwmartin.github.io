@@ -45,6 +45,7 @@ section ul {
 section a {
     text-decoration: none;
     color: #CCCCCC;
+    padding: 2px;
 }
 
 section a:hover {
@@ -65,5 +66,5 @@ nav a:hover {
 h2 {
     font-size: 1.2em;
     color: #D05A41;
-    margin-top: 40px;
+    margin-top: 30px;
 }
