@@ -59,3 +59,10 @@ cat <<EOL > "./posts/archive/$output_file.html"
 </body>
 </html>
 EOL
+
+
+# Generate the HTML link
+link="<li><a href="./posts/html/$output_file.html">$date - $title</a></li>"
+
+# Add the link to the existing HTML file
+sed -i "0,/<ul>/s/<ul>/$link&/" "archive.html"
