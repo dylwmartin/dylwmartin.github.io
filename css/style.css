@@ -10,6 +10,16 @@ h1 {
     color: #789456; /* Slightly green gray */
 }
 
+nav h1 {
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition for smooth color change on hover */
+}
+
+nav h1:hover {
+    color: blue; /* Change color on hover */
+    text-decoration: underline;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -28,4 +38,5 @@ nav a {
 
 nav a:hover {
     color: blue; /* Change color on hover */
+    text-decoration: underline;
 }
